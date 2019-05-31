@@ -44,6 +44,7 @@ end
 delete '/articles/:id' do
   article=Article.find(params[:id])
   article.destroy
-  @articles
+  @articles=Article.all 
+  erb :delete 
 end 
 end 
