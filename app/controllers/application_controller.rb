@@ -20,7 +20,7 @@ Article.create(params)
 redirect "/articles/#{Article.last.id}"
 end
 get "articles"
-@article=Article.all 
+@articles=Article.all 
 erb :index
 end 
 end 
