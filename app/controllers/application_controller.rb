@@ -20,6 +20,7 @@ post '/articles' do
     article.title = params["title"]
     article.content = params["content"]
     article.save
+    @articles=Article.all
 
     redirect("/articles/#{article.id}")
 end
