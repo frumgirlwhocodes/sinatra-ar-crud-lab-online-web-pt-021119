@@ -27,6 +27,7 @@ get '/articles' do
   erb :index
 end
 get '/articles/:id' do
+  
  erb :show  
 end 
 end 
