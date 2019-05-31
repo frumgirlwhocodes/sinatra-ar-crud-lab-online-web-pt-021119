@@ -41,4 +41,8 @@ patch '/articles/:id' do
     @article.save
   redirect("/articles/#{@article.id}")
 end 
+delete '/articles/:id' do
+  article=Article.find(params[:id])
+  article.delete
+end 
 end 
