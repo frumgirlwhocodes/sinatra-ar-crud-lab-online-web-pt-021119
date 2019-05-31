@@ -43,6 +43,7 @@ patch '/articles/:id' do
 end 
 delete '/articles/:id' do
   article=Article.find(params[:id])
-  article.delete
+  article.destroy
+  @articles
 end 
 end 
