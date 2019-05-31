@@ -34,5 +34,6 @@ get '/articles/:id/edit' do
   @article = Article.find(params[:id])
   erb :edit
 end
-patch 
+patch '/articles/:id' do 
+  
 end 
