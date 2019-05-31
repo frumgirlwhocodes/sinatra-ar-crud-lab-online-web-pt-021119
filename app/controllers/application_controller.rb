@@ -19,7 +19,7 @@ post "/articles" do
 Article.create(params)
 redirect "/articles/#{Article.last.id}"
 end
-get "articles"
+get "articles" do 
 @articles=Article.all 
 erb :index
 end 
